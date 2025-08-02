@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Tickets Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Movie Tickets Booking</h1>
+    </header>
+    <main class="main-content">
+        <section class="theater-section">
+            <h2>Select Your Theater</h2>
+            <div class="theater">
+                <h3>Theater 1 (AC)</h3>
+                <p>Available Shows: 10:00 AM, 1:00 PM, 4:00 PM, 7:00 PM</p>
+                <p>Price: ₹200</p>
+                <button class="select-theater">Select</button>
+            </div>
+            <div class="theater">
+                <h3>Theater 2 (Non-AC)</h3>
+                <p>Available Shows: 11:00 AM, 2:00 PM, 5:00 PM, 8:00 PM</p>
+                <p>Price: ₹150</p>
+                <button class="select-theater">Select</button>
+                <section class="receipt" style="display: none;"></section>
+            </div>
+        </section>
+        <section class="seat-booking-section">
+            <h2>Choose Your Seats</h2>
+            <div class="seat-container">
+                <div class="seat-row">
+                    <div class="seat" data-seat="A1"></div>
+                    <div class="seat" data-seat="A2"></div>
+                    <div class="seat booked" data-seat="A3"></div>
+                    <div class="seat" data-seat="A4"></div>
+                </div>
+                <div class="seat-row">
+                    <div class="seat" data-seat="B1"></div>
+                    <div class="seat booked" data-seat="B2"></div>
+                    <div class="seat" data-seat="B3"></div>
+                    <div class="seat" data-seat="B4"></div>
+                </div>
+            </div>
+            <p>Selected Seats: <span id="selected-seats">None</span></p>
+            <p>Total Price: ₹<span id="total-price">0</span></p>
+            <button class="book-now">Book Now</button>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>© 2024 Movie Tickets, All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
